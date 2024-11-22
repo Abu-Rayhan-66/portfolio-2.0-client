@@ -1,0 +1,22 @@
+.box{
+    height: 300px;
+    background: #000;
+    transition: ease-in-out 5s;
+    background-position: top;
+    
+}
+.box.box-1{
+    background: url('../../assets/screenshot (1).png');
+    background-size: cover;
+}
+.box.box-2{
+    background: url('../../assets/screenshot (2).png');
+    background-size: cover;
+}
+.box.box-3{
+    background: url('../../assets/screenshot (3).png');
+    background-size: cover;
+}
+.box:hover{
+    background-position: bottom;
+}
