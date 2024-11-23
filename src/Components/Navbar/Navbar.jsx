@@ -39,7 +39,7 @@ const Navbar = () => {
       </NavLink>
       <NavLink
       onClick={()=>setOpen(false)}
-       
+       to="/#about"
         className={({ isActive, isPending }) =>
           isPending
             ? "pending"
@@ -77,7 +77,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto flex px-3 justify-around items-center py-4">
+      <div className="max-w-7xl mx-auto flex px-3 justify-around items-center py-4 bg-white">
         <div className="lg:flex-1 ">
         <div onClick={()=>{setOpen(!open)}} className="block transition lg:hidden text-4xl font-medium cursor-pointer">{open ? <IoCloseSharp/> : <IoMenuSharp/>}</div>
         <ul className="hidden lg:block font-medium space-x-3">
